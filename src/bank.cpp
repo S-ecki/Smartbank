@@ -92,7 +92,6 @@ bool Bank::remove_account(int n){
 //suche nach acc ohne pers - loeschen falls keine mehr
     for(auto it{customers.begin()}; it != customers.end(); ){
         auto pers_ptr{it->second};
-//wieso break? evtl continue?
         if(pers_ptr == nullptr) continue;
         if(!(pers_ptr->number_of_accounts())) { it = customers.erase(it); }
         else it++;
