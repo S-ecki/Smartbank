@@ -7,9 +7,7 @@ Accounts have autorised persons (weak_ptr), can transfer money (which leads to f
 
 `Person` has a name and one or more accounts (weak_ptr), which the class administers.
 
-<p>
 `Bank` oversees all of the action. It holds shared_ptr to all accounts and persons and is used to create/delete them.
-</p>
 
 ## What I´ve learned
 * Working with Smart Pointers
